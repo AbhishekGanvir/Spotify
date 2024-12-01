@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="./svg/favicon.0f31d2ea.ico" type="svg/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <meta name="google-site-verification" content="sgM2578V8mNj4ElniY-GoCeSghBEroq2Fe-IIzRvvR0" />
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="spotify">
+            <img src="./svg/spotify.svg" alt="spotify" title="Spotify">
+        </div>
+
+        <div id="refreshDiv" title="home" class="home">
+            <img src="./svg/home.svg" alt="home">
+        </div>
+
+        <div class="search-container" title="Search">
+            <div   class="icon home-icon" title="Search"></div>
+            <input type="text" class="search-input" placeholder="What do you want to play?">
+            <div class="icon clear-icon" title="Browse"></div>
+        </div>
+
+        <div onclick="showAlert()" class="btn">
+            <button  class="signup" title="Sign up">Sign up</button>
+            <button class="login" title="Log in">Log in</button>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container-flex">
+        <!-- Left Sidebar -->
+        <section class="left border">
+            <div class="lib" title="library">
+                <div class="lib-1">
+                    <img src="./svg/lib.svg" alt="library">
+                </div>
+                <div class="lib-2">
+                    <b>Your library</b>
+                </div>
+                <div class="lib-3">
+                    <img src="./svg/plus.svg" alt="add to library">
+                </div>
+            </div>
+
+            <!-- Playlist Section -->
+            <div class="pl-box" title="Details">
+                <div class="CYFP">
+                    <h2>Create your first playlist</h2>
+                    <p>It’s easy, we’ll help you</p>
+                    <button>Create playlist</button>
+                </div>
+
+                <div class="CYFP">
+                    <h2>Let's find some podcasts to follow</h2>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="left-side-footer" title="Services">
+                <div class="text-footer">
+                    <div>Legal</div>
+                    <div>Safety & Privacy Centre</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookies</div>
+                    <div>About Ads</div>
+                    <div>Accessibility</div>
+                </div>
+            </div>
+
+            <button class="footer-button">𑁍 English</button>
+        </section>
+
+        <!-- Right Sidebar -->
+        <div class="right border">
+            <div class="heading">Popular artists</div>
+
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                  <img src="./images/mazzy star.jpg" alt="mazzy star" >
+                  <div class="play-svg"><img  src="./svg/spotify play.svg" alt="Mazzy Star" title="Fade Into You">  </div>
+                  <h3 title="Hope Sandoval - American Singer">Mazzy Star</h3>
+                  <p>Artist</p>
+                </div>
+            
+                <!-- Card 2 -->
+                <div class="card">
+                  <img src="./images/shreya ghoshal.jpeg" alt="Shreya Ghoshal" >
+                  <div class="play-svg"><img  src="./svg/spotify play.svg" alt="Shreya Ghoshal"title="Suna Suna"></div>
+                  <h3 title="Indian singer noted for her wide vocal range">Shreya Ghoshal</h3>
+                  <p>Artist</p>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class="card">
+                  <img src="./images/atif aslam.jpeg" alt="Atif Aslam" >
+                  <div class="play-svg"><img  src="./svg/spotify play.svg" alt="Atif Aslam" title="Pehli Nazar Mein"></div>
+                  <h3 title="Pakistani playback singer">Atif Aslam</h3>
+                  <p>Artist</p>
+                </div>
+            
+                <!-- Card 4 -->
+                <div class="card">
+                  <img src="./images/lana del rey.jpg" alt="Lana Del Rey" >
+                  <div class="play-svg"><img  src="./svg/spotify play.svg" alt="Lana Del Rey" title="Music To Watch Boys To"></div>
+                  <h3 title="American singer and songwriter">Lana Del Rey</h3>
+                  <p>Artist</p>
+                </div>
+            
+                <!-- Card 5 -->
+                <div class="card">
+                  <img src="./images/kk.jpg " alt="Mazzy star" >
+                  <div class="play-svg"><img  src="./svg/spotify play.svg" alt="KK" title="Ajab Si"></div>
+                  <h3 title="Indian playback singer">KK</h3>
+                  <p>Artist</p>
+                </div>
+            
+                <!-- Card 6 -->
+                <div class="card">
+                  <img src="./images/the weekend.jpg" alt="Abel">
+                  <div class="play-svg"><img  src="./svg/spotify play.svg" alt="The Weekend" title=" Save Your Tears (Remix) (with Ariana Grande) "></div>
+                  <h3 title="Abel Tesfaye - Canadian singer songwriter">The Weekend</h3>
+                  <p>Artist</p>
+                </div>
+            </div>
+        
+        <div class="heading">Playlists</div>
+                     <div class="playlist">
+        <!-- Play list 1 -->
+         
+        <div class="outer-card">
+        
+            <div class="inner-card" >
+              <a href="https://open.spotify.com/playlist/5kmzh0wISFCQ7X3bdSVJP6?si=2444822f76c342fc" target="_main"><img src="./svg/spotify1.svg" alt="" title="Get full playlist"></a>
+                <ul id="song-list">
+                    
+                  <button title="d4vd - Here With Me">♪ Here With Me</button>
+                  <button title="The Walters - I Love You So.">♪ I Love You So</button>
+                  <button title="yung kai - blue">♪ blue</button>
+                </ul>
+                 <!-- Add the seek bar -->
+    <input type="range" id="seek-bar" min="0" max="100" value="0" class="seek-bar">
+                <div class="controls">
+                  <button id="prev">◁</button>
+                  <button id="play-pause">▶</button>
+                  <button id="next">▷</button>
+                  <button id="shuffle">⇆</button>
+                </div>
+              </div>
+            </div>
+            <div class="playlist-1-text">
+            <h3>Defective Pieces</h3>
+            <a href="https://open.spotify.com/playlist/5kmzh0wISFCQ7X3bdSVJP6?si=2444822f76c342fc" target="_main"> <p title="click to get full playlist">by abhi</p></a>
+      </div>
+          <!-- Play list 2 -->
+          <div class="outer2-card">
+        
+            <div class="inner-card" >
+               <a  href="https://open.spotify.com/playlist/5DUFfFpF2ncROXF4GjXHJi?si=a46e2c0224374003" target="_main"><img src="./svg/spotify1.svg" alt="" title="Get full playlist"> </a>
+                <ul id="song-list">
+                    
+                  <button title="Pritam, Arijit Singh - Main Tera ">♪ Main Tera</button>
+                  <button title="Kaise Mujhe - Benny Dayal,Shreya Ghoshal">♪ Kaise Mujhe </button>
+                  <button title="Atif Aslam - Tu Jaane Na">♪ Tu Jaane Na</button>
+                </ul>
+                 <!-- Add the seek bar -->
+        <input type="range" id="seek-bar" min="0" max="100" value="0" class="seek-bar">
+                <div class="controls">
+                  <button id="prev">◁</button>
+                  <button id="play-pause">▶</button>
+                  <button id="next">▷</button>
+                  <button id="shuffle">⇆</button>
+                </div>
+                     
+              </div>
+            </div>
+            <div class="playlist-1-text">
+                <h3>Daal Chawal >_< </h3>
+               <a href="https://open.spotify.com/playlist/5DUFfFpF2ncROXF4GjXHJi?si=a46e2c0224374003" target="_main"> <p title="click to get full playlist">  by abhi</p></a>
+          </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="cr" title="Contact"> <a href="https://telegram.me/AbhiGanvir" target="_main"> ©Abhishek Ganvir <img src="./svg/telegram.svg" alt=""></a></div>
+        </div>
+
+             
+      </div>
+   </div>
+         
+         <audio id="audio-player-1" src=""></audio>
+         <audio id="audio-player-2" src=""></audio>
+
+        <script src="index.js"> </script>
+        
+</body>
+
+</html>
